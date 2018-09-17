@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains commerce_paynl.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function commerce_paynl_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the commerce_paynl module.
+    case 'help.page.commerce_paynl':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides Commerce integration for Pay.nl.') . '</p>';
+      return $output;
+    default:
+  }
+}

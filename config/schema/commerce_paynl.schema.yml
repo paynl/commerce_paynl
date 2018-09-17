@@ -1,0 +1,15 @@
+commerce_paynl.commerce_payment_gateway.plugin.paynl_redirect_checkout:
+  type: commerce_payment_gateway_configuration
+  mapping:
+    token_code:
+      type: string
+      label: 'Token code (AT-xxxx-xxxx)'
+    api_token:
+      type: string
+      label: 'Your API token'
+    service_id:
+      type: string
+      label: 'Service Id (SL-xxxx-xxxx)'
+    payment_option_id:
+      type: string
+      label: 'The payment method id'

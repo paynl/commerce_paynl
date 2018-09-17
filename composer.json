@@ -1,0 +1,20 @@
+{
+    "name": "drupal/commerce_paynl",
+    "type": "drupal-module",
+    "description": "Integrates Pay.nl in your Commerce 2.x store",
+    "keywords": [
+        "Drupal",
+        "Commerce",
+        "Pay.nl"
+    ],
+    "license": "MIT",
+    "homepage": "https://www.drupal.org/project/commerce_paynl",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/commerce_paynl",
+        "source": "http://cgit.drupalcode.org/commerce_paynl"
+    },
+    "require": {
+        "paynl/sdk": "~1.5.5"
+    }
+}

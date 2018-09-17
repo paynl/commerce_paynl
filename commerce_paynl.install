@@ -1,0 +1,15 @@
+<?php
+
+function commerce_paynl_requirements($phase) {
+  $requirements = [];
+
+  // TODO: Test if this actually works
+  if ($phase === 'install' && !class_exists('\Paynl\Transaction')) {
+    $requirements['commerce_paynl_sdk'] = [
+      'description' => t('Commerce Pay.nl requires the paynl/sdk composer library to be installed'),
+      'severity' => REQUIREMENT_ERROR,
+    ];
+  }
+
+  return $requirements;
+}

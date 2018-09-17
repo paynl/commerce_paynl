@@ -1,0 +1,8 @@
+name: 'Commerce Pay.nl'
+type: module
+description: 'Provides Commerce integration for Pay.nl.'
+core: 8.x
+package: 'Commerce (contrib)'
+dependencies:
+- commerce
+- commerce:commerce_payment
