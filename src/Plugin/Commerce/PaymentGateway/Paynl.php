@@ -259,7 +259,7 @@ class Paynl extends OffsitePaymentGatewayBase implements SupportsNotificationsIn
     if ($payTransaction->isPaid() || $payTransaction->isAuthorized()) {
       $transition = $order->getState()
         ->getWorkflow()
-        ->getTransition('validate');
+        ->getTransition('place');
       $order->getState()->applyTransition($transition);
     }
     elseif ($payTransaction->isCanceled() || $payTransaction->isRefunded()) {
