@@ -1,5 +1,5 @@
 {
-    "name": "drupal/commerce_paynl",
+    "name": "paynl/commerce_paynl",
     "type": "drupal-module",
     "description": "Integrates Pay.nl in your Commerce 2.x store",
     "keywords": [
